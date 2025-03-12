@@ -2,6 +2,8 @@
 Data Science Institute - Cohort 5 - Team Project
 # Overview
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset provides historical data on bike rentals, weather conditions, and temporal information, making it ideal for exploring trends, patterns, and predictive modeling.
+# Business Case
+Can we predict the number of bike rentals at different stations based on various factors such as time of day, day of the week, weather conditions, and local events?
 
 # Team Members:
 * [Rachel Fernandes](https://github.com/rachfern)
@@ -9,3 +11,4 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 * [Daniel Troniak](https://github.com/troniak)
 * [Saleha Ejaz Qureshi](https://github.com/saleha-12)
 * [Efren Tumialan Tenorio](https://github.com/efrenltt24)
+
