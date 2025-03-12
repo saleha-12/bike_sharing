@@ -5,9 +5,9 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 
 # Team Members:
 * [Rachel Fernandes](https://github.com/rachfern)
-* Jingkenh Loh
-* Daniel Troniak
-* Saleha Ejaz Qureshi
+* [Jingkenh Loh](https://github.com/jkenloh)
+* [Daniel Troniak](https://github.com/troniak)
+* [Saleha Ejaz Qureshi](https://github.com/saleha-12)
 * Efren Tumialan Tenorio
 
 # Team Project
