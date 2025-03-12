@@ -8,7 +8,7 @@ Rachel Fernandes\
 Jingkenh Loh\
 Daniel Troniak\
 Saleha Ejaz Qureshi\
-Efren Tumialan Tenorio\
+Efren Tumialan Tenorio
 
 # Team Project
 
