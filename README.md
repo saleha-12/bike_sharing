@@ -10,17 +10,6 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 * Saleha Ejaz Qureshi
 * Efren Tumialan Tenorio
 
-├── data
-├──── processed
-├──── raw
-├──── sql
-├── experiments
-├── models
-├── reports
-├── src
-├── README.md
-└── .gitignore
-
 # Team Project
 
 ## Contents
