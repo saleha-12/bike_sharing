@@ -4,10 +4,10 @@ Data Science Institute - Cohort 5 - Team Project
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the Bike Sharing Dataset from the given datasets. This dataset provides historical data on bike rentals, weather conditions, and temporal information, making it ideal for exploring trends, patterns, and predictive modeling.
 
 # Team Members:
-* Rachel Fernandes\
-* Jingkenh Loh\
-* Daniel Troniak\
-* Saleha Ejaz Qureshi\
+* Rachel Fernandes
+* Jingkenh Loh
+* Daniel Troniak
+* Saleha Ejaz Qureshi
 * Efren Tumialan Tenorio
 
 # Team Project
