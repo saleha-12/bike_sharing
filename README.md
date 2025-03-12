@@ -8,7 +8,7 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 * [Jingkenh Loh](https://github.com/jkenloh)
 * [Daniel Troniak](https://github.com/troniak)
 * [Saleha Ejaz Qureshi](https://github.com/saleha-12)
-* Efren Tumialan Tenorio
+* [Efren Tumialan Tenorio](https://github.com/efrenltt24)
 
 # Team Project
 
