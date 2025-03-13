@@ -25,5 +25,5 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Team Videos
 
 # Data Cleaning and Handling Missing Values
-There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section. 
+There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
