@@ -12,18 +12,18 @@ Our target audience are bike sharing companies looking to expand into other citi
 * [Saleha Ejaz Qureshi](https://github.com/saleha-12)
 * [Efren Tumialan Tenorio](https://github.com/efrenltt24)
 
-Project Overview
-•	Requirements 
+# Project Overview
+* Requirements 
    - Incl. libraries used in Python
-•	Exploratory Data Analysis
-•	Understanding the Raw Data
-•	Data Cleaning and Handling Missing Values
-•	Data Analysis using Python -- Linear Regression
-•	Data Visualization on Tableau (TBD – contingent on progress and time available)
-•	Risks/Unknown 
-•	Conclusion
-•	Team Videos
+* Exploratory Data Analysis
+* Understanding the Raw Data
+* Data Cleaning and Handling Missing Values
+* Data Analysis using Python -- Linear Regression
+* Data Visualization on Tableau (TBD – contingent on progress and time available)
+* Risks/Unknown 
+* Conclusion
+* Team Videos
 
-Data Cleaning and Handling Missing Values
+# Data Cleaning and Handling Missing Values
 There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section. 
 
