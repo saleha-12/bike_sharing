@@ -24,6 +24,9 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Conclusion
 * Team Videos
 
+# Exploratory Data Analysis
+In this Exploratory Data Analysis (EDA), we cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values. Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method. We combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
+
 # Data Cleaning and Handling Missing Values
 There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
