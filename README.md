@@ -31,4 +31,25 @@ In this Exploratory Data Analysis (EDA), we cleaned and prepared bike-sharing da
 There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
 # Creating a Regression Model
-categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it’s considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
+categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
+
+# Model Optimization through Hyperparameter Tuning
+After creating the initial Random Forest model, we implemented hyperparameter tuning using GridSearchCV with 5-fold cross-validation to optimize the model's performance. The grid search explored different combinations of:
+
+* Number of trees (n_estimators): [100, 200, 300]
+* Maximum tree depth (max_depth): [10, 20, 30, None]
+* Minimum samples for split (min_samples_split): [2, 5, 10]
+* Minimum samples per leaf (min_samples_leaf): [1, 2, 4]
+
+The best performing model configuration was found to be:
+* max_depth: None
+* min_samples_leaf: 1
+* min_samples_split: 5
+* n_estimators: 300
+
+This optimized model achieved improved performance metrics on the test set:
+* Mean Squared Error (MSE): 2491.49
+* Mean Absolute Error (MAE): 30.13
+* R² Score: 0.884
+
+The feature importance analysis revealed which factors had the strongest influence on bike rental predictions, helping to identify the key drivers of bike sharing demand. This information is valuable for bike sharing companies looking to expand into new markets, as it highlights which environmental and temporal factors most strongly affect ridership.
