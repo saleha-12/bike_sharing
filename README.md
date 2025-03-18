@@ -4,7 +4,7 @@ Data Science Institute - Cohort 5 - Team Project
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset contains the hourly and daily count of rental bikes system between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information, making it ideal for exploring trends, patterns, and predictive modeling.
 
 <img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="1000"/>
-<center>The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</center>
+<center>The scatterplot with the regression lines for both years demonstrates the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</center>
 
  [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
 
@@ -57,14 +57,7 @@ There do not seem to be any missing values, and the data do not seem to require 
 ## 3. Creating a Regression Model
 categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
 
-## 4. Feature Engineering
-#### Categorical Encoding: 
-One-hot encoded categorical features (season, yr, mnth, weekday, hr, weathersit).
-#### Scaling:
-Scaled numerical features (temp) using StandardScaler to ensure all features are on the same scale.
-#### Combined Dataset:
-* Merged hourly and daily data into a single dataset for modeling.
-## 5. Model Building
+## 4. Model Building
 #### Regression Models:
 * Linear Regression: A baseline model to establish a performance benchmark.
 * Decision Tree Regressor: A non-linear model to capture complex relationships.
@@ -73,7 +66,7 @@ Scaled numerical features (temp) using StandardScaler to ensure all features are
 * Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values.
 * Mean Absolute Error (MAE): Measures the average absolute difference between predicted and actual values.
 * R² Score: Measures the proportion of variance in the target variable explained by the model.
-## 6. Model Evaluation
+## 5. Model Evaluation
 #### Linear Regression:
 * Mean Squared Error (MSE): 7732.07
 * Mean Absolute Error (MAE): 65.75
@@ -97,7 +90,7 @@ Random Forest is the best-performing model, with the lowest MSE, lowest MAE, and
 Decision Tree performs better than Linear Regression, likely because it can model non-linear relationships, but is still outperformed by Random Forest. It is likely overfitting to some extent or not capturing all the complexity in the data.
 Linear Regression is underperforming, likely because the relationship between the features and the target variable is not purely linear. It may not be capturing complex patterns in the data.
 
-## 7. Model Optimization through Hyperparameter Tuning
+## 6. Model Optimization through Hyperparameter Tuning
 After creating the initial Random Forest model, we implemented hyperparameter tuning using GridSearchCV with 5-fold cross-validation to optimize the model's performance. The grid search explored different combinations of:
 
 * Number of trees (n_estimators): [100, 200, 300]
