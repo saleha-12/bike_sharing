@@ -22,7 +22,7 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Risks/Unknown 
 * Conclusion
 * Team Videos
-# Data Cleaning:
+## Data Cleaning:
 * Removed irrelevant columns (holiday, workingday, atemp, hum, windspeed, casual, registered).
 * Handled missing values and duplicates.
 * Normalized the daily cnt (count) metric to average hourly values for consistency with hourly data.
