@@ -46,19 +46,13 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Risks/Unknown 
 * Conclusion
 * Team Videos
-## 1. Data Cleaning:
-* Removed irrelevant columns (holiday, workingday, atemp, hum, windspeed, casual, registered).
-* Handled missing values and duplicates.
-* Normalized the daily cnt (count) metric to average hourly values for consistency with hourly data.
-* Removed outliers using the Interquartile Range (IQR) method to ensure the data is robust for modeling.
+## 1. Data Cleaning and Handling Missing Values
+There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
 ## 2. Exploratory Data Analysis
 * Cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values
 * Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method.
 * Combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
-
-## Data Cleaning and Handling Missing Values
-There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
 ## 3. Creating a Regression Model
 categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
