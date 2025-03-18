@@ -6,19 +6,12 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 ![bike rentals](https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b)
 The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
 ![blob](https://github.com/user-attachments/assets/91e822da-d5de-49c5-96a1-68049eed32aa)
-
-
+The beanplot demonstrates that the lowest number of rents is typical for the 4th weather type (rain, thunderstorm etc.) while the highest mean value of rentals have days with the 1st weather type (clear, partly cloudy etc.)
+[Image Source:](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
 # Business Case
 Our target audience are bike sharing companies looking to expand into other cities with a similar population size and seasonal trends as Washington D.C. Referring to the bike sharing usage patterns in Washington D.C. will help make an informed decision about bike demand in other cities. Our goal is to build a predictive model to forecast bike demand based on factors such as weather, seasons, holidays etc. 
 
-# Team Members:
-* [Rachel Fernandes](https://github.com/rachfern)
-* [Jingkenh Loh](https://github.com/jkenloh)
-* [Daniel Troniak](https://github.com/troniak)
-* [Saleha Ejaz Qureshi](https://github.com/saleha-12)
-* [Efren Tumialan Tenorio](https://github.com/efrenltt24)
-
-# Project Overview
+# Project Workflow
 * Requirements 
    - Incl. libraries used in Python
 * Exploratory Data Analysis
@@ -29,15 +22,62 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Risks/Unknown 
 * Conclusion
 * Team Videos
+# Data Cleaning:
+* Removed irrelevant columns (holiday, workingday, atemp, hum, windspeed, casual, registered).
+* Handled missing values and duplicates.
+* Normalized the daily cnt (count) metric to average hourly values for consistency with hourly data.
+* Removed outliers using the Interquartile Range (IQR) method to ensure the data is robust for modeling.
 
 # Exploratory Data Analysis
-In this Exploratory Data Analysis (EDA), we cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values. Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method. We combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
+* Cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values
+* Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method.
+* Combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
 
 # Data Cleaning and Handling Missing Values
 There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
 # Creating a Regression Model
 categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
+
+# Feature Engineering
+# Categorical Encoding:
+* One-hot encoded categorical features (season, yr, mnth, weekday, hr, weathersit).
+# Scaling:
+* Scaled numerical features (temp) using StandardScaler to ensure all features are on the same scale.
+# Combined Dataset:
+* Merged hourly and daily data into a single dataset for modeling.
+# Model Building
+# Regression Models:
+* Linear Regression: A baseline model to establish a performance benchmark.
+* Decision Tree Regressor: A non-linear model to capture complex relationships.
+* Random Forest Regressor: An ensemble model to improve accuracy and reduce overfitting.
+# Evaluation Metrics:
+* Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values.
+* Mean Absolute Error (MAE): Measures the average absolute difference between predicted and actual values.
+* R² Score: Measures the proportion of variance in the target variable explained by the model.
+# Model Evaluation
+# Linear Regression:
+* Mean Squared Error (MSE): 7732.07
+* Mean Absolute Error (MAE): 65.75
+* R² Score: 0.67
+# Interpretation: 
+The model explains 67% of the variance in bike rentals but has relatively high errors, indicating it may not capture non-linear relationships well.
+# Decision Tree Regressor:
+* Mean Squared Error (MSE):  5045.71
+* Mean Absolute Error (MAE):  40.45
+* R² Score: 0.78
+# Interpretation:
+The model performs better than Linear Regression, capturing more complex patterns, but may still overfit.
+# Random Forest Regressor:
+* Mean Squared Error (MSE):  2690.36
+* Mean Absolute Error (MAE):  30.89
+* R² Score: 0.88
+* Interpretation: The best-performing model, explaining 88% of the variance with the lowest errors. It generalizes well to unseen data.
+
+# Overall Comparison
+Random Forest is the best-performing model, with the lowest MSE, lowest MAE, and highest R² score. It’s ensemble nature (combining multiple decision trees) allows it to reduce overfitting and capture complex, non-linear relationships in the data.
+Decision Tree performs better than Linear Regression, likely because it can model non-linear relationships, but is still outperformed by Random Forest. It is likely overfitting to some extent or not capturing all the complexity in the data.
+Linear Regression is underperforming, likely because the relationship between the features and the target variable is not purely linear. It may not be capturing complex patterns in the data.
 
 # Model Optimization through Hyperparameter Tuning
 After creating the initial Random Forest model, we implemented hyperparameter tuning using GridSearchCV with 5-fold cross-validation to optimize the model's performance. The grid search explored different combinations of:
@@ -59,3 +99,11 @@ This optimized model achieved improved performance metrics on the test set:
 * R² Score: 0.884
 
 The feature importance analysis revealed which factors had the strongest influence on bike rental predictions, helping to identify the key drivers of bike sharing demand. This information is valuable for bike sharing companies looking to expand into new markets, as it highlights which environmental and temporal factors most strongly affect ridership.
+
+
+# Team Members:
+* [Rachel Fernandes](https://github.com/rachfern)
+* [Jingkenh Loh](https://github.com/jkenloh)
+* [Daniel Troniak](https://github.com/troniak)
+* [Saleha Ejaz Qureshi](https://github.com/saleha-12)
+* [Efren Tumialan Tenorio](https://github.com/efrenltt24)
