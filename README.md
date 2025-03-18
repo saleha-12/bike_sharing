@@ -1,7 +1,13 @@
 # Bike Sharing Data Analysis
 Data Science Institute - Cohort 5 - Team Project
 # Overview
-As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset provides historical data on bike rentals, weather conditions, and temporal information, making it ideal for exploring trends, patterns, and predictive modeling.
+As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset contains the hourly and daily count of rental bikes between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information, making it ideal for exploring trends, patterns, and predictive modeling.
+
+![bike rentals](https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b)
+The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
+![blob](https://github.com/user-attachments/assets/91e822da-d5de-49c5-96a1-68049eed32aa)
+
+
 # Business Case
 Our target audience are bike sharing companies looking to expand into other cities with a similar population size and seasonal trends as Washington D.C. Referring to the bike sharing usage patterns in Washington D.C. will help make an informed decision about bike demand in other cities. Our goal is to build a predictive model to forecast bike demand based on factors such as weather, seasons, holidays etc. 
 
