@@ -3,8 +3,7 @@ Data Science Institute - Cohort 5 - Team Project
 # Overview
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset contains the hourly and daily count of rental bikes system between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information, making it ideal for exploring trends, patterns, and predictive modeling.
 
-<img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="500"/>The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
-<img src="https://github.com/user-attachments/assets/91e822da-d5de-49c5-96a1-68049eed32aa" alt="blob" width="500"/>The beanplot demonstrates that the lowest number of rents is typical for the 4th weather type (rain, thunderstorm etc.) while the highest mean value of rentals have days with the 1st weather type (clear, partly cloudy etc.
+<img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="800"/>The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
 
 * [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
 
@@ -13,25 +12,25 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 ### Attribute Information:
 * `instant`: record index
 * `dteday` : date
-* season : season (1:springer, 2:summer, 3:fall, 4:winter)
-* yr : year (0: 2011, 1:2012)
-* mnth : month ( 1 to 12)
-* hr : hour (0 to 23)
-* holiday : weather day is holiday or not (extracted from [Web Link])
-* weekday : day of the week
-* workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
-* weathersit :
+* `season` : season (1:springer, 2:summer, 3:fall, 4:winter)
+* `yr` : year (0: 2011, 1:2012)
+* `mnth` : month ( 1 to 12)
+* `hr` : hour (0 to 23)
+* `holiday` : weather day is holiday or not (extracted from [Web Link])
+* `weekday` : day of the week
+* `workingday` : if day is neither weekend nor holiday is 1, otherwise is 0.
+* `weathersit` :
    * 1: Clear, Few clouds, Partly cloudy, Partly cloudy
    * 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
    * 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
    * 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
-* temp : Normalized temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-8, t_max=+39 (only in hourly scale)
-* atemp: Normalized feeling temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-16, t_max=+50 (only in hourly scale)
-* hum: Normalized humidity. The values are divided to 100 (max)
-* windspeed: Normalized wind speed. The values are divided to 67 (max)
-* casual: count of casual users
-* registered: count of registered users
-* cnt: count of total rental bikes including both casual and registered
+* `temp` : Normalized temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-8, t_max=+39 (only in hourly scale)
+* `atemp`: Normalized feeling temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-16, t_max=+50 (only in hourly scale)
+* `hum` : Normalized humidity. The values are divided to 100 (max)
+* `windspeed` : Normalized wind speed. The values are divided to 67 (max)
+* `casual` : count of casual users
+* `registered` : count of registered users
+* `cnt` : count of total rental bikes including both casual and registered
 # Business Case
 Our target audience are bike sharing companies looking to expand into other cities with a similar population size and seasonal trends as Washington D.C. Referring to the bike sharing usage patterns in Washington D.C. will help make an informed decision about bike demand in other cities. Our goal is to build a predictive model to forecast bike demand based on factors such as weather, seasons, holidays etc. 
 
