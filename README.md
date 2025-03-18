@@ -4,12 +4,12 @@ Data Science Institute - Cohort 5 - Team Project
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset contains the hourly and daily count of rental bikes system between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information, making it ideal for exploring trends, patterns, and predictive modeling.
 
 <img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="1000"/>
-The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
+<center>The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</center>
 
-* [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
+ [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
 
-#### Dataset Size: 17389 samples
-#### Features: 13 numerical features
+#### **Dataset Size**: 17389 samples
+#### **Features**: 13 numerical features
 #### Attribute Information:
 * `instant`: record index
 * `dteday` : date
@@ -21,10 +21,10 @@ The scatterplot with the regression lines for both years demonstrates once again
 * `weekday` : day of the week
 * `workingday` : if day is neither weekend nor holiday is 1, otherwise is 0.
 * `weathersit` :
-   ** 1: Clear, Few clouds, Partly cloudy, Partly cloudy
-   ** 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
-   ** 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
-   ** 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+   * 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+   * 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+   * 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+   * 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
 * `temp` : Normalized temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-8, t_max=+39 (only in hourly scale)
 * `atemp`: Normalized feeling temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-16, t_max=+50 (only in hourly scale)
 * `hum` : Normalized humidity. The values are divided to 100 (max)
