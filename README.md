@@ -4,10 +4,12 @@ Data Science Institute - Cohort 5 - Team Project
 As part of our Final Team Project for the Data Science Software Foundations certificate, we have selected the [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the given datasets. This dataset contains the hourly and daily count of rental bikes system between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information, making it ideal for exploring trends, patterns, and predictive modeling.
 
 <img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="500"/>
-The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.
-![blob](https://github.com/user-attachments/assets/91e822da-d5de-49c5-96a1-68049eed32aa)
-The beanplot demonstrates that the lowest number of rents is typical for the 4th weather type (rain, thunderstorm etc.) while the highest mean value of rentals have days with the 1st weather type (clear, partly cloudy etc.)
-* [Image Source:](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
+# My README File
+
+The scatterplot with the regression lines for both years demonstrates once again the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</p>
+<img src="https://github.com/user-attachments/assets/91e822da-d5de-49c5-96a1-68049eed32aa" alt="blob" width="500"/>
+<p style="font-size: 16px;">The beanplot demonstrates that the lowest number of rents is typical for the 4th weather type (rain, thunderstorm etc.) while the highest mean value of rentals have days with the 1st weather type (clear, partly cloudy etc.)</p>
+* [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
 
 ### Dataset Size: ****17389 samples****
 ### Features: 13 numerical features
