@@ -49,7 +49,11 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Conclusion
 * Team Videos
 ## 1. Data Cleaning and Handling Missing Values
-There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
+* We first removed columns in the datasset that were not relevant to the analysis. 
+* We then checked the dataset for missing values and removed them.
+* We then used the Interquartile Range (IQR) method to remove data points outside of the acceptable range to avoid extreme values skewing the analysis.
+* We then checked the dataset for duplicate entries to ensure that no duplicates existed.
+* Finally, we exported the cleaned dataset for further analysis and modeling.
 
 ## 2. Exploratory Data Analysis
 * The first step in our EDA was to load the the uploaded dataset from GitHub and check the first few rows to make sure the dataset reflected the changes from the data cleaning.
