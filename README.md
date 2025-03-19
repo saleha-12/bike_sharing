@@ -5,11 +5,13 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 
 <img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="1000"/>
 <p align="center">The scatterplot with the regression lines for both years demonstrates the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</p>
-<p align="center">([Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html))</p>
+<p align="center">
+  <a href="https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html">Image Source</a>
+</p>
 
-**Dataset Size**: 17389 samples
+***Dataset Size**: 17389 samples
 * **Features**: 13 numerical features
-#### Attribute Information:
+* #### Attribute Information:
 * `instant`: record index
 * `dteday` : date
 * `season` : season (1:springer, 2:summer, 3:fall, 4:winter)
