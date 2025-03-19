@@ -90,6 +90,15 @@ Random Forest is the best-performing model, with the lowest MSE, lowest MAE, and
 Decision Tree performs better than Linear Regression, likely because it can model non-linear relationships, but is still outperformed by Random Forest. It is likely overfitting to some extent or not capturing all the complexity in the data.
 Linear Regression is underperforming, likely because the relationship between the features and the target variable is not purely linear. It may not be capturing complex patterns in the data.
 
+## Limitations and Considerations
+While the Random Forest model performs exceptionally well, there are a few considerations:
+#### Interpretability:
+Random Forest models are less interpretable than Linear Regression or single Decision Trees. While you can extract feature importance, understanding the exact decision-making process is challenging due to the ensemble nature of the model.
+#### Computational Cost:
+Training a Random Forest can be computationally expensive, especially with a large number of trees (n_estimators) or deep trees (max_depth). However, this is often a worthwhile trade-off for the improved accuracy.
+#### Overfitting:
+While Random Forest is generally robust to overfitting, it can still overfit if not properly tuned (e.g., with too many trees or insufficient min_samples_split). Regular hyperparameter tuning is recommended.
+
 ## 6. Model Optimization through Hyperparameter Tuning
 After creating the initial Random Forest model, we implemented hyperparameter tuning using GridSearchCV with 5-fold cross-validation to optimize the model's performance. The grid search explored different combinations of:
 
