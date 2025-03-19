@@ -1,4 +1,6 @@
 # Since the performance of the model isn't satisfactory, we'll try Decision Tree Regressor and Random Forest Regression models.
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 
 # Train and evaluate Decision Tree Regressor
 tree_model = DecisionTreeRegressor(random_state=42)
@@ -11,6 +13,17 @@ forest_model = RandomForestRegressor(random_state=42)
 forest_model.fit(X_train, y_train)
 y_pred_forest = forest_model.predict(X_test)
 evaluate_model(y_test, y_pred_forest, "Random Forest Regressor")
+Decision Tree Regressor Metrics:
+  - Mean Squared Error (MSE): 5170.949298088411
+  - Mean Absolute Error (MAE): 43.36544205495819
+  - R² Score: 0.7750311064647104
+
+Random Forest Regressor Metrics:
+  - Mean Squared Error (MSE): 2664.211293835009
+  - Mean Absolute Error (MAE): 32.660611011549186
+  - R² Score: 0.8840900128067671
+
+The Random Forest Regressor seems to be the best-performing model for this dataset, achieving the lowest error (MSE = 2690.36, MAE = 30.89) and the highest explanatory power (R² = 0.88).
 
 # creating bar plots to visually compare the performance of the Linear Regression, Decision Tree Regressor, and Random Forest Regressor models
 
@@ -65,3 +78,5 @@ plt.xlabel('Predicted Values')
 plt.ylabel('Residuals')
 plt.title('Residual Plot')
 plt.show()
+
+The residual plot indicates that the model has room for improvement, particularly in handling higher bike rental counts and reducing heteroscedasticity. By hyperparameter tuning, and cross-validation, we can build a more robust and accurate model.
