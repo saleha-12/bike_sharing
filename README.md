@@ -162,8 +162,8 @@ Initially, our predictive model only considered temperature as a numerical featu
 This adjustment aligns with our business case, as our goal is to provide bike-sharing companies with accurate demand forecasts in cities with similar seasonal trends as Washington, D.C. Understanding how multiple weather factors impact bike rentals allows companies to optimize fleet distribution, plan for fluctuations in demand, and make informed decisions about expansion. By including humidity and wind speed, we enhance the model’s predictive accuracy, ensuring that bike-sharing providers have a more comprehensive view of the factors affecting their business.
 
 
-| Name        | GitHub Account  | Roles/Responsibilities  | Reflection Video  |
-| ------------- |:-------------:| -----:|
+| Name | GitHub Account | Roles/Responsibilities | Reflection Video |
+| --- |---| ---|
 | Rachel Fernandes   | [rachfern](https://github.com/rachfern) | | |
 | Jingkenh Loh| [jkenloh](https://github.com/jkenloh) |   | |
 | Daniel Troniak | [troniak](https://github.com/troniak)  |    | |
