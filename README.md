@@ -5,8 +5,7 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 
 <img src="https://github.com/user-attachments/assets/20dd50eb-0e58-4003-9690-868e25c6d80b" alt="bike rentals" width="1000"/>
 <p align="center">The scatterplot with the regression lines for both years demonstrates the difference between the correlation for 2011 and 2012 years. The slope of the regression lines shows that the influence of the temperature for 2011 is more significant than for 2012.</p>
-
- [Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)
+<p align="center">[Image Source](https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html)</p>
 
 **Dataset Size**: 17389 samples
 **Features**: 13 numerical features
@@ -32,6 +31,7 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 * `casual` : count of casual users
 * `registered` : count of registered users
 * `cnt` : count of total rental bikes including both casual and registered
+  
 # Business Case
 Our target audience are bike sharing companies looking to expand into other cities with a similar population size and seasonal trends as Washington D.C. Referring to the bike sharing usage patterns in Washington D.C. will help make an informed decision about bike demand in other cities. Our goal is to build a predictive model to forecast bike demand based on factors such as weather, seasons, holidays etc. 
 
@@ -89,9 +89,15 @@ The model performs better than Linear Regression, capturing more complex pattern
 * Interpretation: The best-performing model, explaining 88% of the variance with the lowest errors. It generalizes well to unseen data.
 
 #### Overall Comparison
+![Comparing our 3 models](https://github.com/user-attachments/assets/f5557539-3360-4c70-97fa-20bf9332dbb7)
+<p align="center">visual comparison of the performance of the Linear Regression, Decision Tree Regressor, and Random Forest Regressor models.</p>
+
 In our analysis, we tested three different regression models to predict bike rentals: Linear Regression, Decision Tree Regressor, and Random Forest Regressor. Each model was evaluated based on its accuracy and error rates.
+
 Linear Regression assumes a simple, straight-line relationship between the input features and bike rentals. However, this approach struggles to capture complex patterns in the data. The model had a Mean Squared Error (MSE) of 7595.54 and a Mean Absolute Error (MAE) of 65.31. MAE indicates that, on average, the model’s predictions were off by 62.64 rental bikes. A smaller MAE signifies better accuracy. The R² score was 0.67, meaning the model could explain only 67% of the variation in bike rentals. While this is a decent result, it shows that linear regression lacks the flexibility to accurately model the data.
+
 Next, we used a Decision Tree Regressor, which can better capture non-linear relationships in the dataset. This model significantly improved accuracy, reducing the MSE to 5170.95 and MAE to 43.37. MAE means that, on average, the model’s predictions were off by 43.37 rental bikes, an improvement over linear regression. The R² score increased to 0.780, meaning it explained 78% of the variation in bike rentals. However, decision trees have a tendency to overfit, meaning they might perform well on training data but may not generalize well to new data.
+
 Finally, we used a Random Forest Regressor, which combines multiple decision trees to improve stability and accuracy. This model performed the best, with an MSE of 2664.21 and an MAE of 32.66. This MAE shows that, on average, the model’s predictions were off by 32.66 rental bikes, making it the most accurate among the three models. The R² score was 0.884, meaning it could explain 88.4% of the variation in bike rentals. Because Random Forest averages multiple trees, it reduces overfitting and provides more reliable predictions.
 
 Random Forest Regression:
