@@ -163,16 +163,10 @@ This adjustment aligns with our business case, as our goal is to provide bike-sh
 
 
 | Name | GitHub Account | Roles/Responsibilities | Reflection Video |
-| --- |---| ---|
-| Rachel Fernandes   | [rachfern](https://github.com/rachfern) | | |
-| Jingkenh Loh| [jkenloh](https://github.com/jkenloh) |   | |
-| Daniel Troniak | [troniak](https://github.com/troniak)  |    | |
-| Saleha Ejaz Qureshi|  [saleha-12](https://github.com/saleha-12) |   | |
-| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) |    | |
+| --- | --- | --- | --- |
+| Rachel Fernandes | [rachfern](https://github.com/rachfern) | | |
+| Jingkenh Loh | [jkenloh](https://github.com/jkenloh) | | |
+| Daniel Troniak | [troniak](https://github.com/troniak) | | |
+| Saleha Ejaz Qureshi | [saleha-12](https://github.com/saleha-12) | | |
+| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) | | |
 
-# Team Members:
-* [Rachel Fernandes](https://github.com/rachfern)
-* [Jingkenh Loh](https://github.com/jkenloh)
-* [Daniel Troniak](https://github.com/troniak)
-* [Saleha Ejaz Qureshi](https://github.com/saleha-12)
-* [Efren Tumialan Tenorio](https://github.com/efrenltt24)
