@@ -55,7 +55,10 @@ There do not seem to be any missing values, and the data do not seem to require 
 * Combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
 
 ## 3. Creating a Regression Model
-categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted. Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier. The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance. Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
+* Categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted.
+* Outlier detection is performed using the Interquartile Range (IQR) method to identify values that are unusually high or low compared to the typical range in the data. If a value falls outside the range of [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR], it's considered an outlier.
+* The categorical features are then one-hot encoded to transform them into a numerical format, creating binary columns for each category, while numerical features are scaled to ensure all values have the same scale (mean = 0, standard deviation = 1), enhancing the model's performance.
+* Finally, the model's performance is evaluated using Mean Squared Error (MSE), which calculates the average squared difference between actual and predicted values (with lower values indicating better performance), and the R² score, which measures how well the model's predictions align with the actual data, with a score closer to 1 indicating stronger predictions.
 
 ## 4. Model Building
 #### Regression Models:
@@ -68,24 +71,37 @@ categorical features (such as season, weather type, and weekday) are identified,
 * R² Score: Measures the proportion of variance in the target variable explained by the model.
 ## 5. Model Evaluation
 #### Linear Regression:
-* Mean Squared Error (MSE): 7732.07
-* Mean Absolute Error (MAE): 65.75
+* Mean Squared Error (MSE): 7595.54
+* Mean Absolute Error (MAE): 65.31
 * R² Score: 0.67
 #### Interpretation: 
 The model explains 67% of the variance in bike rentals but has relatively high errors, indicating it may not capture non-linear relationships well.
 #### Decision Tree Regressor:
-* Mean Squared Error (MSE):  5045.71
-* Mean Absolute Error (MAE):  40.45
+* Mean Squared Error (MSE):  5170.95
+* Mean Absolute Error (MAE):  43,37
 * R² Score: 0.78
 #### Interpretation:
 The model performs better than Linear Regression, capturing more complex patterns, but may still overfit.
 ##3 Random Forest Regressor:
-* Mean Squared Error (MSE):  2690.36
-* Mean Absolute Error (MAE):  30.89
+* Mean Squared Error (MSE):  2664.21
+* Mean Absolute Error (MAE):  32.66
 * R² Score: 0.88
 * Interpretation: The best-performing model, explaining 88% of the variance with the lowest errors. It generalizes well to unseen data.
 
 #### Overall Comparison
+In our analysis, we tested three different regression models to predict bike rentals: Linear Regression, Decision Tree Regressor, and Random Forest Regressor. Each model was evaluated based on its accuracy and error rates.
+Linear Regression assumes a simple, straight-line relationship between the input features and bike rentals. However, this approach struggles to capture complex patterns in the data. The model had a Mean Squared Error (MSE) of 7595.54 and a Mean Absolute Error (MAE) of 65.31. MAE indicates that, on average, the model’s predictions were off by 62.64 rental bikes. A smaller MAE signifies better accuracy. The R² score was 0.67, meaning the model could explain only 67% of the variation in bike rentals. While this is a decent result, it shows that linear regression lacks the flexibility to accurately model the data.
+Next, we used a Decision Tree Regressor, which can better capture non-linear relationships in the dataset. This model significantly improved accuracy, reducing the MSE to 5170.95 and MAE to 43.37. MAE means that, on average, the model’s predictions were off by 43.37 rental bikes, an improvement over linear regression. The R² score increased to 0.780, meaning it explained 78% of the variation in bike rentals. However, decision trees have a tendency to overfit, meaning they might perform well on training data but may not generalize well to new data.
+Finally, we used a Random Forest Regressor, which combines multiple decision trees to improve stability and accuracy. This model performed the best, with an MSE of 2664.21 and an MAE of 32.66. This MAE shows that, on average, the model’s predictions were off by 32.66 rental bikes, making it the most accurate among the three models. The R² score was 0.884, meaning it could explain 88.4% of the variation in bike rentals. Because Random Forest averages multiple trees, it reduces overfitting and provides more reliable predictions.
+
+Random Forest Regression:
+* Uses multiple decision trees and averages their predictions.
+* Each tree works by splitting the data at different points to create regions with similar target values.
+* The final prediction is the average output of all trees.
+* Captures non-linear relationships (bike rentals are influenced by many non-linear factors).
+* Less sensitive to outliers since multiple trees reduce their impact.
+
+#### Conclusion:
 Random Forest is the best-performing model, with the lowest MSE, lowest MAE, and highest R² score. It’s ensemble nature (combining multiple decision trees) allows it to reduce overfitting and capture complex, non-linear relationships in the data.
 Decision Tree performs better than Linear Regression, likely because it can model non-linear relationships, but is still outperformed by Random Forest. It is likely overfitting to some extent or not capturing all the complexity in the data.
 Linear Regression is underperforming, likely because the relationship between the features and the target variable is not purely linear. It may not be capturing complex patterns in the data.
