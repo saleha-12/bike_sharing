@@ -9,7 +9,7 @@ As part of our Final Team Project for the Data Science Software Foundations cert
   <a href="https://rstudio-pubs-static.s3.amazonaws.com/158595_1f520fd8d8e34a5ab3a127376f2f6169.html">Image Source</a>
 </p>
 
-***Dataset Size**: 17389 samples
+* **Dataset Size**: 17389 samples
 * **Features**: 13 numerical features
 * #### Attribute Information:
 * `instant`: record index
