@@ -161,6 +161,15 @@ Our analysis, while comprehensive, faces several important limitations. The data
 Initially, our predictive model only considered temperature as a numerical feature. However, we later decided to include humidity and wind speed as additional numerical variables. This change was essential because weather conditions significantly impact bike rental demand. While temperature is a crucial factor, it does not fully capture the overall comfort level for cyclists. High humidity can make riding uncomfortable, potentially reducing demand, while strong winds can create physical barriers that discourage bike usage. By incorporating these variables, our model better reflects real-world conditions that influence biking behavior.
 This adjustment aligns with our business case, as our goal is to provide bike-sharing companies with accurate demand forecasts in cities with similar seasonal trends as Washington, D.C. Understanding how multiple weather factors impact bike rentals allows companies to optimize fleet distribution, plan for fluctuations in demand, and make informed decisions about expansion. By including humidity and wind speed, we enhance the model’s predictive accuracy, ensuring that bike-sharing providers have a more comprehensive view of the factors affecting their business.
 
+
+| Name        | GitHub Account  | Roles/Responsibilities  | Reflection Video  |
+| ------------- |:-------------:| -----:|
+| Rachel Fernandes   | [rachfern](https://github.com/rachfern) | | |
+| Jingkenh Loh| [jkenloh](https://github.com/jkenloh) |   | |
+| Daniel Troniak | [troniak](https://github.com/troniak)  |    | |
+| Saleha Ejaz Qureshi|  [saleha-12](https://github.com/saleha-12) |   | |
+| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) |    | |
+
 # Team Members:
 * [Rachel Fernandes](https://github.com/rachfern)
 * [Jingkenh Loh](https://github.com/jkenloh)
