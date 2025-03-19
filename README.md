@@ -52,6 +52,14 @@ Our target audience are bike sharing companies looking to expand into other citi
 There do not seem to be any missing values, and the data do not seem to require extensive cleaning. Our team will be conducting a more thorough exploration of the data within the next day or so and update this section.
 
 ## 2. Exploratory Data Analysis
+* The first step in our EDA was to load the the uploaded dataset from GitHub and check the first few rows to make sure the dataset reflected the changes from the data cleaning.
+* We then checked the shape of our dataset to confirm the number of rows and columns.
+* We checked the column data types to make sure each column was the data type we needed to prepare it for the analysis. What we found here was that the "date" column was a string, which would need to be converted to datetime if we needed to do any calculations using dates. Columns for "temperature", "humidity", and "windspeed" were data type float, and the rest of the columns were integers, which were the data types we needed.
+* We then checked the summary stats using .describe() method. Some observations here: column "weekday" has integers between 0-6, so the week starts at integer '0'. Column "weathersit" has no rows that are '4', which means there was no heavy rain throughout the entire time period of this dataset. Column "count" had a minimum of 22 and maximum of 8714, meaning there was significant fluctuation in total rental bikes throughout the time period.
+* We then checked the distribution of each feature using histograms. An observation here is that the most common weather type in the "weathersit" column was '1', followed by '2' with roughly half of the count, with very few '3' and no '4'.
+* We used a boxplot to confirm if there were any outliers and to make sure all the datapoints made sense.
+* Finally, we checked the feature correlations using a heatmap, where we could see that there were a number of correlated features with "count", especially with season, year, weathersit, temperature, adn windspeed, which meant these affected the number of rentals.
+  
 * Cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values
 * Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method.
 * Combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
