@@ -144,6 +144,9 @@ This optimized model achieved improved performance metrics on the test set:
 
 The feature importance analysis revealed which factors had the strongest influence on bike rental predictions, helping to identify the key drivers of bike sharing demand. This information is valuable for bike sharing companies looking to expand into new markets, as it highlights which environmental and temporal factors most strongly affect ridership.
 
+## Risks and Limitations
+
+Our analysis, while comprehensive, faces several important limitations. The dataset exhibits a notable data collection gap, with approximately 140 hours missing from the hourly dataset (17,380 records versus the expected 17,520 hours over two years). This missing data could potentially introduce bias if these gaps correspond to specific events or conditions that affected bike rentals. Additionally, the dataset is limited to Washington D.C.'s specific urban environment and climate patterns, which may not generalize well to cities with significantly different characteristics. The model's predictions might also be less reliable for extreme weather conditions that are underrepresented in the training data. Furthermore, the analysis doesn't account for long-term changes in urban infrastructure, population demographics, or competing transportation options that could influence bike-sharing demand. While our Random Forest model shows strong performance, its "black box" nature makes it difficult to explain specific predictions to stakeholders, which could affect its adoption in decision-making processes where transparency is crucial. These predictions should be considered alongside all these limitations when making business decisions about expanding into new markets.
 
 # Team Members:
 * [Rachel Fernandes](https://github.com/rachfern)
