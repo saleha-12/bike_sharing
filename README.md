@@ -63,10 +63,6 @@ Our target audience are bike sharing companies looking to expand into other citi
 * We then checked the distribution of each feature using histograms. An observation here is that the most common weather type in the "weathersit" column was '1', followed by '2' with roughly half of the count, with very few '3' and no '4'.
 * We used a boxplot to confirm if there were any outliers and to make sure all the datapoints made sense.
 * Finally, we checked the feature correlations using a heatmap, where we could see that there were a number of correlated features with "count", especially with season, year, weathersit, temperature, adn windspeed, which meant these affected the number of rentals.
-  
-* Cleaned and prepared bike-sharing datasets by removing irrelevant columns and handling missing values
-* Duplicate rows were dropped, and outliers in the rental count (cnt) were filtered using the Interquartile Range (IQR) method.
-* Combined the cleaned hourly and daily data into a single DataFrame for further analysis. The final dataset was saved into a new CSV file for future use. This process ensured that the data was ready for accurate and reliable analysis.
 
 ## 3. Creating a Regression Model
 * Categorical features (such as season, weather type, and weekday) are identified, while the numerical features (like temperature, humidity, and wind speed) are also noted.
