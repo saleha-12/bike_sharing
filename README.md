@@ -50,9 +50,9 @@ Our target audience are bike sharing companies looking to expand into other citi
 * Team Videos
 ## 1. Data Cleaning and Handling Missing Values
 * We first removed columns in the datasset that were not relevant to the analysis. 
-* We then checked the dataset for missing values and removed them.
+* We checked the dataset for missing values and removed them.
 * We then used the Interquartile Range (IQR) method to remove data points outside of the acceptable range to avoid extreme values skewing the analysis.
-* We then checked the dataset for duplicate entries to ensure that no duplicates existed.
+* We also checked the dataset for duplicate entries to ensure that no duplicates existed.
 * Finally, we exported the cleaned dataset for further analysis and modeling.
 
 ## 2. Exploratory Data Analysis
