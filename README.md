@@ -97,7 +97,9 @@ To gain an initial understanding of the dataset, we used the .describe() method 
 
 We then examined the distribution of each feature using histograms. One key insight was that the most common weather type in the "weathersit" column was '1', followed by '2', which had roughly half the count of '1'. There were very few occurrences of '3' and none of '4'.
 
-To detect potential outliers and assess data validity, we utilized boxplots. Finally, we analyzed feature correlations using a heatmap, which revealed several strong correlations with the "count" column, particularly with season, year, weathersit, temperature, and windspeed. These findings indicate that these variables do have influence on the number of bike rentals.
+![histogram](https://github.com/saleha-12/bike_sharing/blob/main/data/misc/DSI_Team_Project_Hist.png?raw=true)
+
+To detect potential outliers and assess data validity, we utilized boxplots. Finally, we analyzed feature correlations using a heatmap, which revealed several strong correlations with the "count" column, particularly with hour, temperature, and humidity. These findings indicate that these variables do have influence on the number of bike rentals.
 
 ![heatmap](https://github.com/saleha-12/bike_sharing/blob/main/data/misc/DSI_Team_Project_Heatmap.png?raw=true)
 
