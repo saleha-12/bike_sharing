@@ -71,7 +71,7 @@ Our target audience are bike sharing companies looking to expand into other citi
   * Mean Squared Error (MSE)
   * Mean Absolute Error (MAE)
   * R² Score
-* Model Optimization
+* Model Optimization (Hyperparameter Tuning)
 * Risks and Limitations
 * Revisions and Adjustments
 * Conclusion
