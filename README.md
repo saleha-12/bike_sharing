@@ -11,7 +11,7 @@ As part of our Final Team Project for the Data Science Software Foundations cert
 
 * **Dataset Size**: 17389 samples
 * **Features**: 13 numerical features
-* #### Attribute Information:
+* **Attribute** Information:
 * `instant`: record index
 * `dteday` : date
 * `season` : season (1:springer, 2:summer, 3:fall, 4:winter)
@@ -161,12 +161,16 @@ Our analysis, while comprehensive, faces several important limitations. The data
 Initially, our predictive model only considered temperature as a numerical feature. However, we later decided to include humidity and wind speed as additional numerical variables. This change was essential because weather conditions significantly impact bike rental demand. While temperature is a crucial factor, it does not fully capture the overall comfort level for cyclists. High humidity can make riding uncomfortable, potentially reducing demand, while strong winds can create physical barriers that discourage bike usage. By incorporating these variables, our model better reflects real-world conditions that influence biking behavior.
 This adjustment aligns with our business case, as our goal is to provide bike-sharing companies with accurate demand forecasts in cities with similar seasonal trends as Washington, D.C. Understanding how multiple weather factors impact bike rentals allows companies to optimize fleet distribution, plan for fluctuations in demand, and make informed decisions about expansion. By including humidity and wind speed, we enhance the model’s predictive accuracy, ensuring that bike-sharing providers have a more comprehensive view of the factors affecting their business.
 
+## Working as a Team
+Our team's approach to working collaboratively involved a clear division of responsibilities while maintaining open communication and shared decision-making. By leveraging GitHub Project and Slack, we maintained efficient communication, timely updates, and seamless task coordination. We began by jointly determining the business case to ensure a mutual understanding of our objectives. 
+Each team member then took ownership of specific tasks as mentioned in the table below. Finally, we collaborated as a team to compile the ReadMe file, ensuring that our project was documented comprehensively and clearly for future reference.
+This structured yet flexible approach allowed us to leverage each member's strengths while promoting a supportive and inclusive working environment.
 
 | Name | GitHub Account | Roles/Responsibilities | Reflection Video |
-| --- | --- | --- | --- |
-| Rachel Fernandes | [rachfern](https://github.com/rachfern) | | |
-| Jingkenh Loh | [jkenloh](https://github.com/jkenloh) | | |
-| Daniel Troniak | [troniak](https://github.com/troniak) | | |
-| Saleha Ejaz Qureshi | [saleha-12](https://github.com/saleha-12) | | |
-| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) | | |
+| :---: | :---: | :---: | :---: |
+| Rachel Fernandes | [rachfern](https://github.com/rachfern) |Data Cleaning and Handling Missing Values |video here|
+| Jingkenh Loh | [jkenloh](https://github.com/jkenloh) |Exploratory Data Analysis |video here|
+| Daniel Troniak | [troniak](https://github.com/troniak) |Creating a Regression Model|video here|
+| Saleha Ejaz Qureshi | [saleha-12](https://github.com/saleha-12) |Model Buidling and Evaluation|video here|
+| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) |Model Optimization through Hyperparameter Tuning|video here|
 
