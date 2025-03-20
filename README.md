@@ -39,15 +39,44 @@ Our target audience are bike sharing companies looking to expand into other citi
 
 # Project Workflow
 * Requirements 
-   - Incl. libraries used in Python
-* Exploratory Data Analysis
-* Understanding the Raw Data
+   - Python libraries used for data manipulation, analysis, and visualization:
+     * pandas
+     * numpy
+     * matplotlib.pyplot
+     * seaborn
+   - Python libraries used for machine leraning and model development:
+     * sklearn.model_selection
+       * train_test_split
+       * GridSearchCV
+     * sklearn.preprocessing
+       * OneHotEncoder
+       * StandardScaler
+     * sklearn.linear_model
+       * LinearRegression
+     * sklearn.tree
+       * DecisionTreeRegressor
+     * sklearn.ensemble
+       * RandomForestRegressor
+     * sklearn.metrics
+       * mean_squared_error, mean_absolute_error, r2_score
+       * make_scorer
 * Data Cleaning and Handling Missing Values
-* Data Analysis using Python -- Linear Regression
-* Data Visualization on Tableau (TBD – contingent on progress and time available)
-* Risks/Unknown 
+* Exploratory Data Analysis (EDA)
+* Creating a Regression Model
+* Model Building
+  * Linear Regression
+  * Decision Tree Regressor
+  * Random Forest Regressor
+* Model Evaluation
+  * Mean Squared Error (MSE)
+  * Mean Absolute Error (MAE)
+  * R² Score
+* Model Optimization through Hyperparameter Tuning
+* Risks and Limitations
+* Revisions and Adjustments
 * Conclusion
 * Team Videos
+  
 ## 1. Data Cleaning and Handling Missing Values
 * We first removed columns in the datasset that were not relevant to the analysis. 
 * We checked the dataset for missing values and removed them.
