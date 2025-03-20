@@ -92,10 +92,10 @@ Next, we checked the shape of the dataset to confirm the number of rows and colu
 To gain an initial understanding of the dataset, we used the .describe() method to generate summary statistics. Key observations included:
 
 * The "weekday" column contained integers ranging from 0 to 6, indicating that the week starts at integer '0'.
-* The "weathersit" column had no occurrences of '4', meaning there were no instances of heavy rain throughout the recorded time period.
+* The "weather" column had no occurrences of '4', meaning there were no instances of heavy rain throughout the recorded time period.
 * The "count" column (total rental bikes) ranged from a minimum of 22 to a maximum of 8,714, suggesting significant fluctuations in bike rentals.
 
-We then examined the distribution of each feature using histograms. One key insight was that the most common weather type in the "weathersit" column was '1', followed by '2', which had roughly half the count of '1'. There were very few occurrences of '3' and none of '4'.
+We then examined the distribution of each feature using histograms. One key insight was that the most common weather type in the "weather" column was '1', followed by '2', which had roughly half the count of '1'. There were very few occurrences of '3' and none of '4'.
 
 ![histogram](https://github.com/saleha-12/bike_sharing/blob/main/data/misc/DSI_Team_Project_Hist.png?raw=true)
 
