@@ -209,9 +209,9 @@ This structured yet flexible approach allowed us to leverage each member's stren
 | :---: | :---: | :---: | :---: |
 | Rachel Fernandes | [rachfern](https://github.com/rachfern) |Data Cleaning and Handling Missing Values |video here|
 | Jingkenh Loh | [jkenloh](https://github.com/jkenloh) |Exploratory Data Analysis |video here|
-| Daniel Troniak | [troniak](https://github.com/troniak) |Creating a Regression Model|video here|
+| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) |Creating a Regression Model|video here|
 | Saleha Ejaz Qureshi | [saleha-12](https://github.com/saleha-12) |Model Buidling and Evaluation|video here|
-| Efren Tumialan Tenorio | [efrenltt24](https://github.com/efrenltt24) |Model Optimization through Hyperparameter Tuning|video here|
+| Daniel Troniak | [troniak](https://github.com/troniak) |Model Optimization through Hyperparameter Tuning|video here|
 
 ## Conclusion
 
