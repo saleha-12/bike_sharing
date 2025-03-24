@@ -131,7 +131,7 @@ The model explains 67% of the variance in bike rentals but has relatively high e
 * R² Score: 0.78
 #### Interpretation:
 The model performs better than Linear Regression, capturing more complex patterns, but may still overfit.
-##3 Random Forest Regressor:
+#### Random Forest Regressor:
 * Mean Squared Error (MSE):  2664.21
 * Mean Absolute Error (MAE):  32.66
 * R² Score: 0.88
